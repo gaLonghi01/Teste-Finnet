@@ -1,0 +1,30 @@
+<h1>Cursos</h1>
+<hr>
+
+<section id="cursos">
+    {{itens}}
+
+    {{pagination}}
+</section>
+
+<hr>
+
+<section id="form">
+    <h3>Cadastro de Curso</h3>
+
+    <form method="post" action="?page=1">
+        <div class="form-group">
+            <label>Nome do curso</label>
+            <input type="text" class="form-control" name="nome_curso" required>
+        </div>
+
+        <div class="form-group">
+            <label>Descrição</label>
+            <textarea class="form-control" rows="5" name="descricao" required></textarea>
+        </div>
+
+        <div class="form-group mt-3">
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </div>
+    </form>
+</section>
